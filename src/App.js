@@ -29,7 +29,10 @@ import "./App.css";
 import ErrorBoundary from "./component/ErrorBoundary.js";
 import Hero from "./component/Hero.js";
 import ClickCounter from "./component/HigherOrder/ClickCounter.js";
+import ClickCounterTwo from "./component/HigherOrder/ClickCounterTwo.js";
+
 import HoverCounter from "./component/HigherOrder/HoverCounter.js";
+import HoverCounterTwo from "./component/HigherOrder/HoverCounterTwo.js";
 
 function App() {
   return (
@@ -86,6 +89,8 @@ function App() {
       </ErrorBoundary>
       <ClickCounter name = "sarfraj"></ClickCounter>
       <HoverCounter></HoverCounter>
+      <ClickCounterTwo></ClickCounterTwo>
+      <HoverCounterTwo></HoverCounterTwo>
     </div>
   );
 }
