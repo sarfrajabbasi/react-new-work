@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 // import UserGreeting from './component/ConditionalRendering';
 // import ParentComponent from './component/MethodsAsProps';
@@ -26,14 +26,16 @@ import "./App.css";
 // import Focusinput from './component/refs/Focusinput'
 // import FRParentInput from './component/refs/FRParentInput.js'
 // import PortalDemo from './component/refs/PortalDemo.js';
-import ErrorBoundary from "./component/ErrorBoundary.js";
-import Hero from "./component/Hero.js";
-import ClickCounter from "./component/HigherOrder/ClickCounter.js";
-import ClickCounterTwo from "./component/HigherOrder/ClickCounterTwo.js";
-
-import HoverCounter from "./component/HigherOrder/HoverCounter.js";
-import HoverCounterTwo from "./component/HigherOrder/HoverCounterTwo.js";
-
+// import ErrorBoundary from "./component/ErrorBoundary.js";
+// import Hero from "./component/Hero.js";
+// import ClickCounter from "./component/HigherOrder/ClickCounter.js";
+// 
+// import HoverCounter from "./component/HigherOrder/HoverCounter.js";
+// import ClickCounterTwo from "./component/HigherOrder/ClickCounterTwo.js";
+// import HoverCounterTwo from "./component/HigherOrder/HoverCounterTwo.js";
+// import User from "./component/HigherOrder/User.js";
+// import Counter from "./component/HigherOrder/Counter.js";
+import ComponentC from './component/context/ComponentC.js'
 function App() {
   return (
     <div className="App">
@@ -75,7 +77,7 @@ function App() {
       {/* <FRParentInput></FRParentInput> */}
       {/* <PortalDemo></PortalDemo> */}
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroName="Batman"></Hero>
       </ErrorBoundary>
       <ErrorBoundary>
@@ -88,11 +90,35 @@ function App() {
         <Hero heroName="joker"></Hero>
       </ErrorBoundary>
       <ClickCounter name = "sarfraj"></ClickCounter>
-      <HoverCounter></HoverCounter>
-      <ClickCounterTwo></ClickCounterTwo>
-      <HoverCounterTwo></HoverCounterTwo>
+      <HoverCounter></HoverCounter> */}
+      {/* <ClickCounterTwo></ClickCounterTwo> */}
+      {/* <HoverCounterTwo></HoverCounterTwo> */}
+      {/* <User render= {(isLoggedIn)=>  isLoggedIn ? 'sarfraj' :'Guest'}></User> */}
+       {/* <Counter render={(count,incrementCount)=> <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo> }>
+      </Counter>
+      <Counter render={(count,incrementCount)=> <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo> }>
+      </Counter>  */}
+{/* 
+      <Counter>
+        {
+        (count,incrementCount)=> (<ClickCounterTwo></ClickCounterTwo> count={count} incrementCount={incrementCount})
+        }
+        </Counter>
+
+        <Counter>
+        {
+        (count,incrementCount)=> (<HoverCounterTwo></HoverCounterTwo> count={count} incrementCount={incrementCount})
+        }
+        </Counter> */}
+
+        {/* -------------context--------------- */}
+         <ComponentC></ComponentC>
+        {/* -------------XXX--------------- */}
+        
     </div>
   );
 }
 
 export default App;
+
+/*   */
